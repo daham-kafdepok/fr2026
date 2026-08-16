@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ta'awun DAHAM 2026 — Fastabiqul Khairat, Bergerak Bersama</title>
+<meta name="description" content="Gerakan Bersama Ta'awun DAHAM 2026 — penggalangan dana bersama, target Rp300.000.000 dalam 30 hari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="nav__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="30" height="30"><path d="M20 3 C11 3 5 11 5 20 C5 29 11 34 20 37 C29 34 35 29 35 20 C35 11 29 3 20 3 Z M20 8 C26 8 30 13 30 20 C30 27 26 31 20 34 C14 31 10 27 10 20 C10 13 14 8 20 8 Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="20" cy="17" r="3.2" fill="currentColor"/></svg>
+      </span>
+      <span>Ta'awun DAHAM <em>2026</em></span>
+    </a>
+    <nav class="nav__links">
+      <a href="#tentang">Tentang</a>
+      <a href="#laporan">Laporan Dana</a>
+      <a href="#berdonasi">Cara Berdonasi</a>
+      <a href="#panitia">Panitia</a>
+    </nav>
+    <a href="#berdonasi" class="btn btn--gold nav__cta">Tunaikan Donasi</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__ornament" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">Launching Gerakan Bersama · Selasa, 18 Agustus 2026 · 20.00–21.00 WIB · Online via Zoom</p>
+
+      <div class="mihrab">
+        <svg class="mihrab__frame" viewBox="0 0 640 760" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M20 760 V300 C20 130 150 20 320 20 C490 20 620 130 620 300 V760" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+          <path d="M50 760 V300 C50 148 165 50 320 50 C475 50 590 148 590 300 V760" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.55"/>
+          <defs>
+            <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#E3C874"/>
+              <stop offset="100%" stop-color="#8E6A16"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="mihrab__content">
+          <h1>Gerakan Bersama<br><span class="hl">Ta'awun DAHAM 2026</span></h1>
+          <p class="tagline">"Fastabiqul Khairat, Bergerak Bersama"</p>
+          <p class="lede">Satu ikhtiar, seribu tangan. Mari berhimpun dalam ta'awun — tolong-menolong dalam kebaikan dan takwa — untuk menggerakkan program bersama DAHAM selama 30 hari ke depan.</p>
+
+          <div class="progress-card" id="progressCard">
+            <div class="progress-card__row">
+              <div>
+                <span class="progress-card__label">Terkumpul</span>
+                <span class="progress-card__amount" id="statCollected">Rp0</span>
+              </div>
+              <div class="progress-card__target">
+                <span class="progress-card__label">Target</span>
+                <span class="progress-card__amount progress-card__amount--target">Rp300.000.000</span>
+              </div>
+            </div>
+
+            <div class="tasbih" role="img" aria-label="Progres penggalangan dana">
+              <div class="tasbih__track">
+                <div class="tasbih__fill" id="tasbihFill" style="width:0%"></div>
+                <div class="tasbih__bead" style="left:25%"></div>
+                <div class="tasbih__bead" style="left:50%"></div>
+                <div class="tasbih__bead" style="left:75%"></div>
+                <div class="tasbih__bead tasbih__bead--imam" style="left:100%"></div>
+              </div>
+              <div class="tasbih__pct" id="statPercent">0%</div>
+            </div>
+
+            <div class="progress-card__stats">
+              <div><span class="num" id="statDonors">0</span><span class="lbl">Donatur</span></div>
+              <div><span class="num" id="statDays">30</span><span class="lbl">Hari Tersisa</span></div>
+              <div><span class="num" id="statAvg">Rp0</span><span class="lbl">Rata-rata</span></div>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#berdonasi" class="btn btn--gold">Salurkan Donasi Sekarang</a>
+            <a href="#laporan" class="btn btn--ghost">Lihat Laporan Real-time</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-strip" aria-hidden="true"></div>
+
+  <!-- ===== TENTANG ===== -->
+  <section class="section" id="tentang">
+    <div class="section__inner section__inner--split">
+      <div class="section__label">
+        <span class="eyebrow eyebrow--dark">01 — Tentang Gerakan</span>
+        <h2>Ta'awun: Tolong-menolong<br>dalam Kebaikan</h2>
+      </div>
+      <div class="section__body">
+        <p>Ta'awun DAHAM 2026 adalah gerakan bersama yang lahir dari semangat <em>fastabiqul khairat</em> — berlomba-lomba dalam kebaikan. Selama 30 hari, kita berhimpun bergotong royong menggalang dana untuk mendukung program-program DAHAM: pendidikan santri, pemberdayaan dhuafa, dan pelayanan umat di sekitar kita.</p>
+        <p>Bukan sekadar mengumpulkan dana, gerakan ini adalah ajakan untuk berembuk, bergerak, dan berbagi bersama — satu jamaah, satu tujuan.</p>
+        <ul class="pillar-list">
+          <li><strong>Berembuk</strong> — merancang program bersama, terbuka dan musyawarah.</li>
+          <li><strong>Bergerak</strong> — menghimpun kekuatan jamaah menjadi aksi nyata.</li>
+          <li><strong>Berbagi</strong> — menyalurkan manfaat kepada yang membutuhkan, tepat sasaran.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-strip border-strip--rev" aria-hidden="true"></div>
+
+  <!-- ===== TIMELINE ===== -->
+  <section class="section section--green" id="linimasa">
+    <div class="section__inner">
+      <span class="eyebrow eyebrow--gold">02 — Linimasa 30 Hari</span>
+      <h2 class="section__title--light">Dari Launching hingga Penutupan</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="timeline__date">18 Agustus 2026</span>
+          <span class="timeline__title">Launching Gerakan</span>
+          <span class="timeline__desc">Peluncuran resmi via Zoom, pukul 20.00–21.00 WIB.</span>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__date">Hari 1–15</span>
+          <span class="timeline__title">Fase Penggalangan</span>
+          <span class="timeline__desc">Donasi dibuka luas, laporan transparan diperbarui berkala.</span>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__date">Hari 16–29</span>
+          <span class="timeline__title">Fase Percepatan</span>
+          <span class="timeline__desc">Ajakan bersama menuju target Rp300 juta.</span>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__date">17 September 2026</span>
+          <span class="timeline__title">Penutupan &amp; Laporan Akhir</span>
+          <span class="timeline__desc">Rekap dana dan penyaluran diumumkan kepada seluruh donatur.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LAPORAN DANA (LIVE) ===== -->
+  <section class="section" id="laporan">
+    <div class="section__inner">
+      <span class="eyebrow eyebrow--dark">03 — Laporan Dana</span>
+      <h2>Transparansi, Amanah Kita Bersama</h2>
+      <p class="section__intro">Data diperbarui otomatis dari catatan donasi. Setiap rupiah tercatat sebagai bentuk amanah kepada jamaah.</p>
+
+      <div class="report-grid">
+        <div class="report-card">
+          <span class="report-card__label">Total Terkumpul</span>
+          <span class="report-card__value" id="repCollected">Rp0</span>
+          <span class="report-card__sub">dari target Rp300.000.000</span>
+        </div>
+        <div class="report-card">
+          <span class="report-card__label">Jumlah Donatur</span>
+          <span class="report-card__value" id="repDonors">0</span>
+          <span class="report-card__sub">orang telah bergerak bersama</span>
+        </div>
+        <div class="report-card">
+          <span class="report-card__label">Hari Tersisa</span>
+          <span class="report-card__value" id="repDays">30</span>
+          <span class="report-card__sub">menuju 17 September 2026</span>
+        </div>
+      </div>
+
+      <div class="donor-table__wrap">
+        <table class="donor-table">
+          <thead>
+            <tr><th>Waktu</th><th>Donatur</th><th>Jumlah</th></tr>
+          </thead>
+          <tbody id="donorTableBody">
+            <tr><td colspan="3" class="donor-table__empty">Memuat data laporan…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="disclaimer" id="dataDisclaimer">Menunggu koneksi ke sumber data (Google Sheet). Lihat <code>js/app.js</code> untuk mengatur alamat API.</p>
+    </div>
+  </section>
+
+  <div class="border-strip" aria-hidden="true"></div>
+
+  <!-- ===== CARA BERDONASI ===== -->
+  <section class="section section--parchment" id="berdonasi">
+    <div class="section__inner section__inner--split">
+      <div class="section__label">
+        <span class="eyebrow eyebrow--dark">04 — Cara Berdonasi</span>
+        <h2>Tunaikan Ta'awun Anda</h2>
+        <p>Pilih cara yang paling mudah. Setiap kontribusi, besar maupun kecil, adalah langkah bersama menuju target.</p>
+      </div>
+      <div class="donate-methods">
+        <div class="donate-card">
+          <h3>Transfer Bank</h3>
+          <p class="donate-card__bank">Bank [Nama Bank] — a.n. [Nama Penerima/Panitia]</p>
+          <p class="donate-card__nomor">No. Rek: [000-0000-0000] <button class="copy-btn" data-copy="000-0000-0000" type="button">Salin</button></p>
+        </div>
+        <div class="donate-card">
+          <h3>QRIS</h3>
+          <div class="qris-box">Tempatkan gambar QRIS di sini<br><small>(assets/qris.png)</small></div>
+        </div>
+        <div class="donate-card donate-card--wide">
+          <h3>Konfirmasi Donasi</h3>
+          <p>Setelah transfer, mohon konfirmasi agar tercatat pada laporan transparansi.</p>
+          <form class="donate-form" id="donateForm">
+            <div class="donate-form__row">
+              <label>Nama Donatur<input type="text" name="nama" required placeholder="Nama Anda / Hamba Allah"></label>
+              <label>Nominal (Rp)<input type="number" name="jumlah" min="1000" required placeholder="100000"></label>
+            </div>
+            <div class="donate-form__row">
+              <label>No. WhatsApp<input type="tel" name="nohp" placeholder="081413333513"></label>
+              <label>Metode<select name="metode"><option>Transfer Bank</option><option>QRIS</option><option>Tunai</option></select></label>
+            </div>
+            <label>Doa / Pesan (opsional)<textarea name="pesan" rows="2" placeholder="Titip doa untuk gerakan ini..."></textarea></label>
+            <button type="submit" class="btn btn--gold" id="donateSubmit">Kirim Konfirmasi</button>
+            <p class="donate-form__status" id="donateStatus"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-strip border-strip--rev" aria-hidden="true"></div>
+
+  <!-- ===== PANITIA ===== -->
+  <section class="section" id="panitia">
+    <div class="section__inner">
+      <span class="eyebrow eyebrow--dark">05 — Panitia &amp; Kontak</span>
+      <h2>Silaturahmi &amp; Konfirmasi</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Narahubung Panitia</h3>
+          <p>[Nama Narahubung]<br>WhatsApp: [08xxxxxxxxxx]</p>
+        </div>
+        <div class="contact-card">
+          <h3>Media Sosial</h3>
+          <p>Instagram: [@daham2026]<br>Website: [daham2026.example]</p>
+        </div>
+        <div class="contact-card">
+          <h3>Link Zoom Launching</h3>
+          <p>Link menyusul — akan diumumkan menjelang 18 Agustus 2026.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <svg class="footer__skyline" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,120 L0,80 L40,80 L40,60 L60,60 L60,40 L80,40 L80,20 L100,10 L120,20 L120,40 L140,40 L140,60 L160,60 L160,80 L260,80 L260,50 L280,50 L280,30 Q290,10 300,30 L300,50 L320,50 L320,80 L420,80 L420,55 L440,55 L440,25 L460,15 L480,25 L480,55 L500,55 L500,80 L600,80 L600,60 L620,60 L620,40 L640,40 L640,15 Q650,0 660,15 L660,40 L680,40 L680,60 L700,60 L700,80 L820,80 L820,50 L840,50 L840,28 Q850,10 860,28 L860,50 L880,50 L880,80 L980,80 L980,55 L1000,55 L1000,30 L1020,20 L1040,30 L1040,55 L1060,55 L1060,80 L1200,80 L1200,120 Z" fill="currentColor"/>
+    </svg>
+    <p class="footer__tagline">Berembuk. Bergerak. Berbagi.<br><strong>Berlomba dalam Kebaikan.</strong></p>
+    <p class="footer__meta">Gerakan Bersama Ta'awun DAHAM 2026 &middot; Laporan dana bersumber dari Google Sheet, diperbarui berkala.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
